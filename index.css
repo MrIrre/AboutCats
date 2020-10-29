@@ -134,6 +134,8 @@ main {
   white-space: nowrap;
 }
 
+/* WebKit for Yandex Browser */
+
 @-webkit-keyframes buzz-out-on-hover {
   10% {
     -webkit-transform: translateX(3px) rotate(2deg);
@@ -286,10 +288,7 @@ main {
   margin-bottom: 55px;
 }
 
-.direction:checked ~ .items .item .item-top {
-  height: 400px;
-}
-
+.direction:checked ~ .items .item .item-top,
 .direction:checked ~ .items .item .item-top .item-image {
   height: 400px;
 }
@@ -317,10 +316,7 @@ main {
   text-align: center;
 }
 
-.footer-link {
-  color: white;
-}
-
+.footer-link,
 .footer-link:visited {
   color: white;
 }
