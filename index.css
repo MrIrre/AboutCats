@@ -1,0 +1,280 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+
+  background-color: #e6f0fa;
+}
+
+header {
+  padding: 10px;
+
+  background: #57ba70;
+  color: white;
+  font-size: 42px;
+}
+
+.header-text {
+  margin-left: 20px;
+
+  font-size: 60px;
+}
+
+.header-tagline {
+  font-size: 50px;
+  font-style: italic;
+}
+
+main {
+  box-sizing: border-box;
+  height: auto;
+  padding: 100px 26px;
+}
+
+/* Direction Button */
+
+.direction {
+  display: none;
+
+  cursor: pointer;
+}
+
+.direction-button {
+  display: inline-block;
+
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+
+  border: 2px solid black;
+  border-radius: 5px;
+
+  transform: rotate(90deg);
+
+  cursor: pointer;
+}
+
+.direction:checked + .direction-button {
+  transform: rotate(0deg);
+}
+
+.direction-button-line {
+  display: block;
+
+  width: 36px;
+  height: 6px;
+
+  margin: 6px auto;
+
+  border-radius: 5px;
+
+  background-color: black;
+}
+
+/* Items */
+
+.items {
+  max-width: 100%;
+}
+
+.item {
+  position: relative;
+
+  display: inline-block;
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  width: 400px;
+  height: 500px;
+
+  margin: 20px;
+
+  border-radius: 4%;
+
+  background-color: white;
+
+  box-shadow: 0 4px 6px rgba(26, 65, 101, 0.15);
+
+  vertical-align: top;
+}
+.item:hover {
+  transform: scale(1.1, 1.1);
+
+  box-shadow: 0 10px 10px rgba(12, 37, 59, 0.7);
+}
+
+.item-top:hover {
+  transform: rotateY(180deg);
+}
+
+.item-image {
+  width: 100%;
+  height: 300px;
+
+  object-fit: cover;
+}
+
+.item-bottom {
+  padding: 10px 25px 30px;
+
+  color: black;
+}
+
+.item-name {
+  overflow: hidden;
+
+  font-size: 22px;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+@keyframes buzz-out-on-hover {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.item-name:hover,
+.item-name:focus {
+  overflow: visible;
+
+  animation-duration: 0.75s;
+  animation-iteration-count: 1;
+  animation-name: buzz-out-on-hover;
+  animation-timing-function: linear;
+
+  text-overflow: clip;
+
+  white-space: normal;
+}
+
+.item-name-link {
+  color: inherit;
+}
+
+.item-name-link:visited {
+  color: #57ba70;
+}
+
+.item-short-description {
+  color: dimgray;
+
+  font-size: 18px;
+}
+
+.item-short-description:hover {
+  font-style: italic;
+}
+
+.item-long-description {
+  display: none;
+
+  color: dimgray;
+
+  font-size: 24px;
+}
+
+.item-long-description:hover {
+  text-transform: uppercase;
+}
+
+/* Row view is ENABLED */
+
+.direction:checked ~ .items {
+  width: 850px;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.direction:checked ~ .items > .item {
+  display: block;
+
+  width: 800px;
+  height: 900px;
+
+  margin-top: 55px;
+  margin-bottom: 55px;
+}
+
+.direction:checked ~ .items .item .item-top {
+  height: 400px;
+}
+
+.direction:checked ~ .items .item .item-top .item-image {
+  height: 400px;
+}
+
+.direction:checked ~ .items .item .item-bottom .item-name {
+  font-size: 36px;
+}
+
+.direction:checked ~ .items .item .item-bottom .item-short-description {
+  display: none;
+}
+
+.direction:checked ~ .items .item .item-bottom .item-long-description {
+  display: block;
+}
+
+.footer-links {
+  padding: 10px;
+
+  background: #57ba70;
+  color: white;
+
+  font-size: 42px;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer-link {
+  color: white;
+}
+
+.footer-link:visited {
+  color: white;
+}
