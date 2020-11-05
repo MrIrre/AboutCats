@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta name="author" content="Zhaygutov Erlan">
     <title>Мурмаркет</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
   </head>
   <body>
-    <header>
-      <section class="header-text">
-        <h1><span class="header-text-first-letter">М</span>урмаркет</h1>
-      </section>
+    <header class="header">
+      <div class="header-text">
+        <span class="header-text-first-letter">М</span>урмаркет
+      </div>
     </header>
     <main>
       <input id="modal-toggle-1" type="checkbox">
-      <article class="modal-content">
+      <div class="modal-content">
         <label class="modal-close" for="modal-toggle-1">&#x2715;</label>
         <div class="modal-image-wrapper">
           <img class="modal-image" src="images/cat1.png" alt="Первый модальный котик">
@@ -29,11 +31,11 @@
             </div>
           </article>
         </div>
-      </article>
+      </div>
       <label class="modal-backdrop" for="modal-toggle-1"></label>
 
       <input id="modal-toggle-2" type="checkbox">
-      <article class="modal-content">
+      <div class="modal-content">
         <label class="modal-close" for="modal-toggle-2">&#x2715;</label>
         <div class="modal-image-wrapper">
           <img class="modal-image" src="images/cat2.jpeg" alt="Второй модальный котик">
@@ -56,11 +58,11 @@
             </div>
           </article>
         </div>
-      </article>
+      </div>
       <label class="modal-backdrop" for="modal-toggle-2"></label>
 
       <input id="modal-toggle-3" type="checkbox">
-      <article class="modal-content">
+      <div class="modal-content">
         <label class="modal-close" for="modal-toggle-3">&#x2715;</label>
         <div class="modal-image-wrapper">
           <img class="modal-image" src="images/cat3.jpg" alt="Третий модальный котик">
@@ -74,11 +76,11 @@
             </div>
           </article>
         </div>
-      </article>
+      </div>
       <label class="modal-backdrop" for="modal-toggle-3"></label>
 
       <input id="modal-toggle-4" type="checkbox">
-      <article class="modal-content">
+      <div class="modal-content">
         <label class="modal-close" for="modal-toggle-4">&#x2715;</label>
         <div class="modal-image-wrapper">
           <img class="modal-image" src="images/cat4.jpg" alt="Четвёртый модальный котик">
@@ -97,11 +99,11 @@
             </div>
           </article>
         </div>
-      </article>
+      </div>
       <label class="modal-backdrop" for="modal-toggle-4"></label>
 
       <input id="modal-toggle-5" type="checkbox">
-      <article class="modal-content">
+      <div class="modal-content">
         <label class="modal-close" for="modal-toggle-5">&#x2715;</label>
         <div class="modal-image-wrapper">
           <img class="modal-image" src="images/cat5.jpg" alt="Пятый модальный котик">
@@ -123,65 +125,63 @@
             </div>
           </article>
         </div>
-      </article>
+      </div>
       <label class="modal-backdrop" for="modal-toggle-5"></label>
 
-      <section class="section slider">
-        <input type="radio" name="slider" id="slide-1" class="slider__radio" />
-        <input type="radio" name="slider" id="slide-2" class="slider__radio" />
-        <input type="radio" name="slider" id="slide-3" class="slider__radio" checked />
-        <input type="radio" name="slider" id="slide-4" class="slider__radio" />
-        <input type="radio" name="slider" id="slide-5" class="slider__radio" />
+      <div class="section slider">
+        <input type="radio" name="slider" id="slide-1" class="slider-radio" />
+        <input type="radio" name="slider" id="slide-2" class="slider-radio" />
+        <input type="radio" name="slider" id="slide-3" class="slider-radio" checked />
+        <input type="radio" name="slider" id="slide-4" class="slider-radio" />
+        <input type="radio" name="slider" id="slide-5" class="slider-radio" />
 
-        <div class="slider__holder">
-          <label for="slide-1" class="slider__item slider__item--1 card">
+        <div class="slider-holder">
+          <div class="slider-item slider-item--1 card">
+            <label for="slide-1" class="slider-label"></label>
             <label class="modal-btn" for="modal-toggle-1"></label>
-            <img class="item__image" src="images/cat1.png" alt="Первый котик">
-            <div class="item__name">Удивительный</div>
-          </label>
-          <!-- Slider__item -->
+            <img class="slider-item-image" src="images/cat1.png" alt="Первый котик">
+            <div class="slider-item-name">Удивительный</div>
+          </div>
 
-          <label for="slide-2" class="slider__item slider__item--2 card">
+          <div class="slider-item slider-item--2 card">
+            <label for="slide-2" class="slider-label"></label>
             <label class="modal-btn" for="modal-toggle-2"></label>
-            <img class="item__image" src="images/cat2.jpeg" alt="Второй котик">
-            <div class="item__name">Мяудальф</div>
-          </label>
-          <!-- Slider__item -->
+            <img class="slider-item-image" src="images/cat2.jpeg" alt="Второй котик">
+            <div class="slider-item-name">Мяудальф</div>
+          </div>
 
-          <label for="slide-3" class="slider__item slider__item--3 card">
+          <div class="slider-item slider-item--3 card">
+            <label for="slide-3" class="slider-label"></label>
             <label class="modal-btn" for="modal-toggle-3"></label>
-            <img class="item__image" src="images/cat3.jpg" alt="Третий котик">
-            <div class="item__name">Шавермик</div>
-          </label>
-          <!-- Slider__item -->
+            <img class="slider-item-image" src="images/cat3.jpg" alt="Третий котик">
+            <div class="slider-item-name">Шавермик</div>
+          </div>
 
-          <label for="slide-4" class="slider__item slider__item--4 card">
+          <div class="slider-item slider-item--4 card">
+            <label for="slide-4" class="slider-label"></label>
             <label class="modal-btn" for="modal-toggle-4"></label>
-            <img class="item__image" src="images/cat4.jpg" alt="Четвёртый котик">
-            <div class="item__name">ачёвсмысле</div>
-          </label>
-          <!-- Slider__item -->
+            <img class="slider-item-image" src="images/cat4.jpg" alt="Четвёртый котик">
+            <div class="slider-item-name">ачёвсмысле</div>
+          </div>
 
-          <label for="slide-5" class="slider__item slider__item--5 card">
+          <div class="slider-item slider-item--5 card">
+            <label for="slide-5" class="slider-label"></label>
             <label class="modal-btn" for="modal-toggle-5"></label>
-            <img class="item__image" src="images/cat5.jpg" alt="Пятый котик">
-            <div class="item__name">Сударь нечестивый</div>
-          </label>
-          <!-- Slider__item -->
+            <img class="slider-item-image" src="images/cat5.jpg" alt="Пятый котик">
+            <div class="slider-item-name">Сударь нечестивый</div>
+          </div>
         </div>
-        <!-- Slider Holder -->
 
         <div class="bullets">
-          <label for="slide-1" class="bullets__item bullets__item--1"></label>
-          <label for="slide-2" class="bullets__item bullets__item--2"></label>
-          <label for="slide-3" class="bullets__item bullets__item--3"></label>
-          <label for="slide-4" class="bullets__item bullets__item--4"></label>
-          <label for="slide-5" class="bullets__item bullets__item--5"></label>
+          <label for="slide-1" class="bullets-item bullets-item--1"></label>
+          <label for="slide-2" class="bullets-item bullets-item--2"></label>
+          <label for="slide-3" class="bullets-item bullets-item--3"></label>
+          <label for="slide-4" class="bullets-item bullets-item--4"></label>
+          <label for="slide-5" class="bullets-item bullets-item--5"></label>
         </div>
-        <!-- Bullets -->
-      </section>
+      </div>
     </main>
-    <footer>
+    <footer class="footer">
       <div class="footer-links">
         Напишите нам:
         <br>
