@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="author" content="Zhaygutov Erlan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мурмаркет</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
           rel="stylesheet">
@@ -10,187 +11,123 @@
   </head>
   <body>
     <header class="header">
-      <div class="header-text">
-        <span class="header-text-first-letter">М</span>урмаркет
-      </div>
+      <div class="header-text">Мурмаркет</div>
     </header>
-    <main>
-      <input id="modal-toggle-1" type="checkbox">
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle-1">&#x2715;</label>
-        <div class="modal-image-wrapper">
-          <img class="modal-image" src="images/cat1.png" alt="Первый модальный котик">
-        </div>
-        <div class="modal-info-wrapper">
-          <article class="modal-info">
-            <h2 class="modal-info-name">Удивительный</h2>
-            <div class="modal-info-description">
-              Вязка на вашей территории. Доставка кота в черте города.
-              Кот воспитанный, с Вами на Вы, с дамой сердца максимально галантный!
-              Возраст: 2 года.
+    <main class="main">
+      <ul class="items-list">
+        <li class="item">
+          <div class="item-image-wrapper">
+            <img class="item-image" src="images/cat1.png" alt="Первый котик">
+          </div>
+          <article class="item-info">
+            <h3 class="item-name">Удивлённый кот</h3>
+            <div class="item-short-description">
+              Удивительный, волшебный, невероятный. Возраст 2 года.
             </div>
           </article>
-        </div>
-      </div>
-      <label class="modal-backdrop" for="modal-toggle-1"></label>
-
-      <input id="modal-toggle-2" type="checkbox">
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle-2">&#x2715;</label>
-        <div class="modal-image-wrapper">
-          <img class="modal-image" src="images/cat2.jpeg" alt="Второй модальный котик">
-        </div>
-        <div class="modal-info-wrapper">
-          <article class="modal-info">
-            <h2 class="modal-info-name">Мяудальф</h2>
-            <div class="modal-info-description">
-              Hialp heitir eitt,
-              <br>En dhat hialpa mun
-              <br>Vith savkam oc sorgom
-              <br>Oc sutum giorvavllum
-              <br>Dhat kann ec it annat,
-              <br>Er thurfol yta synir
-              <br>Their er vilja laeknar lifa.
-              <br>Dhat kann ec it thrithia,
-              <br>Ef mer verdhr thavrf micil
-              <br>Haptz vidh mina haeiptmogu:
-              <br>Eggiar ec deyfi.
+          <div class="item-long-description">
+            Вязка на вашей территории. Доставка кота в черте города.
+            Кот воспитанный, с Вами на Вы, с дамой сердца максимально галантный!
+            Возраст: 2 года.
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-image-wrapper">
+            <img class="item-image" src="images/cat2.jpeg" alt="Второй котик">
+          </div>
+          <article class="item-info">
+            <h3 class="item-name">Мяудальф</h3>
+            <div class="item-short-description">
+              Магический, неподражаемый, повеливающий.
+              <br>30 лет и 3 года.
             </div>
           </article>
-        </div>
-      </div>
-      <label class="modal-backdrop" for="modal-toggle-2"></label>
-
-      <input id="modal-toggle-3" type="checkbox">
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle-3">&#x2715;</label>
-        <div class="modal-image-wrapper">
-          <img class="modal-image" src="images/cat3.jpg" alt="Третий модальный котик">
-        </div>
-        <div class="modal-info-wrapper">
-          <article class="modal-info">
-            <h2 class="modal-info-name">Шавермик</h2>
-            <div class="modal-info-description">
-              Шавермик ищет дом. Был найдён на улице. Обработан от паразитов.
-              На вид 4 месяца. Очень напуган. Лоток и когтеточка в подарок.
+          <div class="item-long-description">
+            Hialp heitir eitt,
+            <br>En dhat hialpa mun
+            <br>Vith savkam oc sorgom
+            <br>Oc sutum giorvavllum
+            <br>Dhat kann ec it annat,
+            <br>Er thurfol yta synir
+            <br>Their er vilja laeknar lifa.
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-image-wrapper">
+            <img class="item-image" src="images/cat3.jpg" alt="Третий котик">
+          </div>
+          <article class="item-info">
+            <h3 class="item-name">Шавермик</h3>
+            <div class="item-short-description">
+              Напуганный, потрёпанный.
+              <br>Возраст 4 месяца.
+              <br>Любит шаурму.
             </div>
           </article>
-        </div>
-      </div>
-      <label class="modal-backdrop" for="modal-toggle-3"></label>
-
-      <input id="modal-toggle-4" type="checkbox">
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle-4">&#x2715;</label>
-        <div class="modal-image-wrapper">
-          <img class="modal-image" src="images/cat4.jpg" alt="Четвёртый модальный котик">
-        </div>
-        <div class="modal-info-wrapper">
-          <article class="modal-info">
-            <h2>ачёвсмысле</h2>
-            <div class="modal-info-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+          <div class="item-long-description">
+            Шавермик ищет дом. Был найдён на улице. Обработан от паразитов.
+            На вид 4 месяца. Очень напуган. Лоток и когтеточка в подарок.
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-image-wrapper">
+            <img class="item-image" src="images/cat4.jpg" alt="Четвёртый котик">
+          </div>
+          <section class="item-info">
+            <h3 class="item-name">аче всмысле</h3>
+            <div class="item-short-description">
+              ато вкарамысле
+            </div>
+          </section>
+          <div class="item-long-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+            sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-image-wrapper">
+            <img class="item-image" src="images/cat5.jpg" alt="Пятый котик">
+          </div>
+          <article class="item-info">
+            <h3 class="item-name">Сударь нечестивый</h3>
+            <div class="item-short-description">
+              Кошка. Британец.
+              <br>Бирюзовые глаза.
+              <br>3 года от роду.
+              <br>А ты думал, что я с тобой в игрушки играю?
             </div>
           </article>
-        </div>
-      </div>
-      <label class="modal-backdrop" for="modal-toggle-4"></label>
-
-      <input id="modal-toggle-5" type="checkbox">
-      <div class="modal-content">
-        <label class="modal-close" for="modal-toggle-5">&#x2715;</label>
-        <div class="modal-image-wrapper">
-          <img class="modal-image" src="images/cat5.jpg" alt="Пятый модальный котик">
-        </div>
-        <div class="modal-info-wrapper">
-          <article class="modal-info">
-            <h2 class="modal-info-name">Сударь нечестивый</h2>
-            <div class="modal-info-description">
-              Котик был найден на улице. Долго искали старых хозяев,
-              но никто не откликнулся. Поэтому, ищем ему новых ответственных,
-              заботливых хозяев.
-              <br>
-              <br>О котике:
-              <br>Возраст примерно 3 года, может чуть больше. Очень ласковый,
-              к лотку приучен, в еде не привередлив.
-              Обработан от внешних и внутренних паразитов, ранки все залечены,
-              ушки почищены, воспитан.
-              <br>Хочешь себе плюшевого "мишку". Забирай!!!
-            </div>
-          </article>
-        </div>
-      </div>
-      <label class="modal-backdrop" for="modal-toggle-5"></label>
-
-      <div class="section slider">
-        <input type="radio" name="slider" id="slide-1" class="slider-radio" />
-        <input type="radio" name="slider" id="slide-2" class="slider-radio" />
-        <input type="radio" name="slider" id="slide-3" class="slider-radio" checked />
-        <input type="radio" name="slider" id="slide-4" class="slider-radio" />
-        <input type="radio" name="slider" id="slide-5" class="slider-radio" />
-
-        <div class="slider-holder">
-          <div class="slider-item slider-item--1 card">
-            <label for="slide-1" class="slider-label"></label>
-            <label class="modal-btn" for="modal-toggle-1"></label>
-            <img class="slider-item-image" src="images/cat1.png" alt="Первый котик">
-            <div class="slider-item-name">Удивительный</div>
+          <div class="item-long-description">
+            Котик был найден на улице. Долго искали старых хозяев,
+            но никто не откликнулся. Поэтому, ищем ему новых ответственных,
+            заботливых хозяев.
+            <br>
+            <br>О котике:
+            <br>Возраст примерно 3 года, может чуть больше. Очень ласковый,
+            к лотку приучен, в еде не привередлив.
+            Обработан от внешних и внутренних паразитов, ранки все залечены,
+            ушки почищены, воспитан.
+            <br>Хочешь себе плюшевого "мишку". Забирай!!!
           </div>
-
-          <div class="slider-item slider-item--2 card">
-            <label for="slide-2" class="slider-label"></label>
-            <label class="modal-btn" for="modal-toggle-2"></label>
-            <img class="slider-item-image" src="images/cat2.jpeg" alt="Второй котик">
-            <div class="slider-item-name">Мяудальф</div>
-          </div>
-
-          <div class="slider-item slider-item--3 card">
-            <label for="slide-3" class="slider-label"></label>
-            <label class="modal-btn" for="modal-toggle-3"></label>
-            <img class="slider-item-image" src="images/cat3.jpg" alt="Третий котик">
-            <div class="slider-item-name">Шавермик</div>
-          </div>
-
-          <div class="slider-item slider-item--4 card">
-            <label for="slide-4" class="slider-label"></label>
-            <label class="modal-btn" for="modal-toggle-4"></label>
-            <img class="slider-item-image" src="images/cat4.jpg" alt="Четвёртый котик">
-            <div class="slider-item-name">ачёвсмысле</div>
-          </div>
-
-          <div class="slider-item slider-item--5 card">
-            <label for="slide-5" class="slider-label"></label>
-            <label class="modal-btn" for="modal-toggle-5"></label>
-            <img class="slider-item-image" src="images/cat5.jpg" alt="Пятый котик">
-            <div class="slider-item-name">Сударь нечестивый</div>
-          </div>
-        </div>
-
-        <div class="bullets">
-          <label for="slide-1" class="bullets-item bullets-item--1"></label>
-          <label for="slide-2" class="bullets-item bullets-item--2"></label>
-          <label for="slide-3" class="bullets-item bullets-item--3"></label>
-          <label for="slide-4" class="bullets-item bullets-item--4"></label>
-          <label for="slide-5" class="bullets-item bullets-item--5"></label>
-        </div>
-      </div>
+        </li>
+      </ul>
     </main>
     <footer class="footer">
       <div class="footer-links">
-        Напишите нам:
-        <br>
+        <img class="footer-link-email-image" src="images/letter_icon.png" alt="Email: ">
+        <div class="footer-text">Напишите нам:</div>
         <div class="footer-link">
           <img class="footer-link-email-image" src="images/letter_icon.png" alt="Email: ">
           <a class="footer-link-url" href="mailto:cats@babuli.ru" target="_blank" rel="noopener">
             cats@babuli.ru
           </a>
         </div>
+        <div class="footer-text-dot">&bull;</div>
         <div class="footer-link">
           <img class="footer-link-email-image" src="images/letter_icon.png" alt="Email: ">
           <a class="footer-link-url" href="mailto:vnuchek@babuli.ru" target="_blank" rel="noopener">
